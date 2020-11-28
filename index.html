@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>game</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet"> 
+ <style>
+
+ 	.nav-col
+ 	{
+ 		background-color: rgba(0,0,0,.6);
+
+ 	}
+ 	.a
+ 	{
+ 		
+ 		font-family: 'Alatsi', sans-serif;
+ 		font-weight: bold;
+ 		font-size: 80px;
+ 		color:white;
+ 	}
+ 	.a:hover
+ 	{
+ 		color:white;
+ 	}
+ 	.image-back
+ 	{
+ 		
+ 		width:100%;
+ 		height:100vh;
+ 		background-image: url(best4.jpg);
+ 		background-size: cover;
+ 		background-repeat: no-repeat;
+ 		
+ 		padding-top: 15%;
+ 		
+
+ 	}
+ 	.c1
+ 	{
+ 		width:100%;
+ 		height:auto;
+ 		padding-left: 0px!important;
+ 		padding-right: 0px!important;	
+ 	}
+ 	#right1
+ 	{
+ 		position: absolute;
+ 		width:60%;
+ 		height:auto;
+ 		border-radius: 10px;
+ 		background-color: white;
+ 		text-align:center;
+ 		padding-top: 30px;
+ 		left:20%;
+ 		padding-bottom: 30px;
+ 	}
+#right2
+ 	{
+ 		position: absolute;
+ 		width:60%;
+ 		height:auto;
+ 		border-radius: 10px;
+ 		background-color: white;
+ 		text-align:center;
+ 		visibility: hidden;
+ 		padding-top:30px;
+ 		left:20%;
+ 		padding-bottom: 30px;
+ 	}
+ 	p
+ 	{
+ 		color:red;
+ 		font-size: 25px;
+ 		font-family: 'Lobster Two', cursive;
+ 	}
+ 	h2
+ 	{
+ 		font-style: italic;
+ 		font-family: 'Playfair Display', serif;
+ 		font-weight: bold;
+ 		font-size: 50px;
+ 		color:rgba(0,0,100,.7);
+ 	}
+ 	h1
+ 	{
+ 		padding-top: 0px;
+ 		text-transform: capitalize;
+ 		
+ 	}
+ 	.form-control
+ 	{
+ 		width:100%;
+ 	}
+ 	#input1
+ 	{
+ 		width:200px;	
+ 	}
+ 	#input2
+ 	{
+ 		padding-top: 10px;
+ 		outline: none;
+ 		background:none;
+ 		border:none;
+ 		color:rgba(0,0,0,.4);
+ 		text-align: center;
+ 		color:rgba(0,0,0,.8);
+ 		font-size: 30px;
+ 	}
+ 	#right3
+ 	{
+ 		position: absolute;
+ 		width:60%;
+ 		height:auto;
+ 		border-radius: 10px;
+ 		visibility: hidden;
+ 		text-align:center;
+ 		padding-top: 20px;
+ 		background-color: white;
+ 		left:20%;
+ 		padding-bottom: 20px;
+ 	} 	
+ 	#right4
+ 	{
+ 		position: absolute;
+ 		width:60%;
+ 		height:auto;
+ 		border-radius: 10px;
+ 		visibility: hidden;
+ 		text-align:center;
+ 		padding-top: 30px;
+ 		background-color: white;
+ 		left:20%;
+ 		padding-bottom: 30px;
+ 	} 	
+ 	.t1
+ 	{
+ 		font-size:40px;
+ 		color:rgba(0,0,0,.7);
+ 	}
+ 	.input2
+ 	{
+ 		width:100%;
+ 	}
+ 	h3
+ 	{
+ 		color:rgba(0,0,0,.7);
+ 	}
+ 	h5
+ 	{
+ 	color:rgba(0,0,0,.7);
+ 	font-style: italic;	
+ 	font-size: 30px;
+ 	}
+</style>
+</head>
+<body onload="on()">	
+
+<nav class="navbar navbar-expand-lg  bg-transparent fixed-top">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mx-auto">
+    	<li class="nav-item">
+        	<a class="nav-link a" href="#">Magic <img src="8.png" height="60px"> Ball</a>
+      	</li>
+      	
+      
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid c1">
+	<div class="image-back ">	
+		<div class="row">
+			<div class="col">
+				<div id="right1" >
+					<div class="row">
+						<div class="col p-3">
+							<h2>Magic<img src="8.png" height="60px">Ball</h2>
+							<h1>please enter your name</h1>
+						</div>
+					</div>
+					<div class="row p-3">
+						<div class="col text-center">
+							<input type="text" id="input1">
+						</div>
+					</div>
+					<div class="row p-3">
+						<div class="col-sm-3">
+						</div>
+						<div class="col text-center">
+							<button type="btn" class="btn btn-danger form-control input" onclick="catch1()">Ask</button>
+						</div>
+						<div class="col-sm-3">
+						</div>
+						
+					</div>
+				</div>
+				<div id="right2" >
+					<div class="row">
+						<div class="col">
+							<h2>Magic<img src="8.png" height="60px"> Ball</h2>
+							<h3>Welcome </h3>
+							<h4 id="catch1"  class="text-primary"></h4>			
+						</div>
+					</div>
+					<div class="row p-3">
+						<div class="col text-center">
+							<p id="h"></h>
+						</div>
+					</div>
+					<div class="row p-3">
+						<div class="col-sm-3">
+						</div>
+						<div class="col-sm-3 p-3 text-center">
+							<button type="btn" class="btn btn-danger form-control input" onclick="display()">Ask</button>
+						</div>
+						<div class="col-sm-3 p-3 text-center">
+							<button type="btn" class="btn btn-primary form-control input" onclick="Quit()">Quit</button>
+						</div>
+					</div>
+				</div>
+				<div id="right3" >
+					<div class="row">
+						<div class="col">
+							<h2>Magic<img src="8.png" height="60px">Ball</h2>
+						</div>
+					</div>
+					<div class="row p-3">
+						
+						<div class="col">
+							<h1><input type="text" class="form-control" id="input2" placeholder="Ask any thing you want"></h1>
+							<h5 id="q1"></h5>
+							<h6 id="t">Thank You</h6>
+							<p id="ans"></p>
+						</div>
+					</div>
+					<div class="row p-3">
+						<div class="">
+						</div>
+						<div class="col c2">
+							<button type="btn" class="btn btn-danger form-control input" id="b1" onclick="again()">Ask</button>
+						</div>
+						<div class="col text-center c2">
+							<button type="btn" class="btn btn-primary form-control input" onclick="thank()">Quit</button>
+						</div>
+					</div>
+				</div>
+				<div id="right4" >
+					<div class="row">
+						<div class="col">
+							<h2>Magic<img src="8.png" height="60px">Ball</h2>
+								
+						</div>
+					</div>
+					<div class="row p-3">
+						<div class="col text-center">
+							<div class="t1">Thank you</div>
+						</div>
+					</div>
+					<div class="row p-3">
+						<div class="col-sm-3">
+						</div>
+						
+						<div class="col-sm-3 text-center">
+							<button type="btn" class="btn btn-danger form-control" onclick="again1()">Play Again</button>
+						</div>
+						<div class="col-sm-3 text-center">
+							
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+</div>
+<script>
+	t.style.visibility='hidden';
+
+	function on()
+	{
+		document.getElementById("input1").value="";
+		document.getElementById("input2").value="";
+	}
+	function again1()
+	{
+		right4.style.display='none';
+		right1.style.visibility='visible';
+		document.getElementById("input1").value="";
+		document.getElementById("input2").value="";
+	}
+	function thank()
+	{
+		right3.style.visibility='hidden';
+		right4.style.visibility='visible';
+	}
+	function catch1()
+	{	
+
+
+		if(input1.value.length==0)
+		{
+			alert("please enter the name first");
+
+		}
+		else
+		{
+		right1.style.visibility='hidden';
+		right2.style.visibility='visible';
+		var a=document.getElementById("input1").value;
+		document.getElementById("catch1").innerHTML=a;
+		setTimeout(() => {document.getElementById("h").innerHTML="Magic Ball is ready to tell your fortune"},1000);
+		}
+	}
+function display()
+	{
+		right2.style.visibility='hidden';
+		right3.style.visibility='visible';
+		var a=document.getElementById("input1").value;
+		document.getElementById("catch1").innerHTML=a;
+	}
+	function Quit()
+	{
+		right2.style.visibility='hidden';
+		document.getElementById("input1").value="";
+		right1.style.visibility='visible';
+	}
+	function again()
+	{
+		
+		if(input2.value.length==0)
+		{
+			alert("please enter the question");
+		}
+		else
+		{
+		 a=Math.floor(Math.random() * 8);
+		 if(a==1)
+		 {
+		 	console.log("might be");
+
+		 	document.getElementById("input2").value="";
+				
+		 	document.getElementById("ans").innerHTML="might be";
+		 }
+		 else if(a==2)
+		 {
+		 	console.log("It is Certain");
+		 	document.getElementById("input2").value="";
+			document.getElementById("ans").innerHTML="It is Certain";
+		 }
+		 else if(a==3)
+		 {
+		 	console.log("It is decidedly so");
+		 	document.getElementById("input2").value="";
+			document.getElementById("ans").innerHTML="It is decidedly so";
+		 }
+		 else if(a==4)
+		 {
+		 	console.log("cannot not predict now");
+		 	document.getElementById("input2").value="";
+			
+		 	document.getElementById("ans").innerHTML="cannot not predict now";	
+		 }
+		 else if(a==5)
+		 {
+		 	console.log("Do not count on it");
+		 	document.getElementById("input2").value="";
+			document.getElementById("ans").innerHTML="Do not count on it";
+		 }
+		 else if(a==6)
+		 {
+		 	console.log("let see");
+		 	document.getElementById("input2").value="";
+			document.getElementById("ans").innerHTML="let see";
+		 }
+		 else if(a==7)
+		 {
+		 	console.log("no");
+		 	document.getElementById("input2").value="";
+			document.getElementById("ans").innerHTML="no";
+		 }
+		 }	
+	}
+</script>
+</body>
+</html>
